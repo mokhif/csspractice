@@ -112,6 +112,13 @@ body {
 
 }
 
+@media (min-widhth: 344px)and (max-widhth: 512px) {
+
+    .nav-links li:nth-child(5),
+    .nav-links li:nth-child(1) {
+        display: none;
+    }
+}
 
 
 
