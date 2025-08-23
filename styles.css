@@ -112,7 +112,7 @@ body {
 
 }
 
-@media (min-widhth: 10px)and (max-widhth: 512px) {
+@media (min-width: 10px) and (max-width: 512px) {
 
     .nav-links li:nth-child(5),
     .nav-links li:nth-child(1) {
