@@ -27,7 +27,7 @@ body {
 }
 
 .header {
-    width: 144rem;
+    max-width: 144rem;
     height: 7rem;
     display: flex;
     justify-content: space-between;
@@ -161,13 +161,29 @@ img.img2 {
     inset: auto 0 0 0;
 }
 
-/* img.office-img {
+
+.dots-img {
+    position: absolute;
+    top: -0.4rem;
+}
+
+.cnt-img {
+    position: relative;
+    width: 80%;
+    aspect-ratio: 2/1;
+}
+
+img.office-img {
     width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    object-position: top;
-} */
+    height: 100%;
+}
+
+/* DIRHA F SVG
+ */
+
+
+
+
 
 @media (min-width: 513px) {
     .nav-links li:nth-child(3) {
