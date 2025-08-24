@@ -13,7 +13,7 @@ html {
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    line-height: 1.5;
+    line-height: 1.55;
 }
 
 .header {
@@ -120,9 +120,105 @@ body {
     }
 }
 
+.btn {
+    display: inline-block;
+    border-radius: 3rem;
+    background-color: #DF7C14;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 1.4rem 1.4rem;
+
+}
+
+.btn-style {
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.ct-showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.title-2 {
+    font-size: 3.8rem;
+    font-weight: 600;
+
+}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 .img-container {
     position: relative;
     width: 100%;
@@ -143,4 +239,4 @@ body {
     right: 0;
     width: 100%;
     height: auto;
-}
+} */
