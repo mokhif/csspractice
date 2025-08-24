@@ -131,9 +131,9 @@ body {
     max-width: 47rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin: 0 auto;
     gap: 2rem;
-    padding-left: 5rem;
+    padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 10rem;
 }
