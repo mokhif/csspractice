@@ -93,6 +93,8 @@ body {
     .nav-links li:nth-child(4) {
         display: block;
     }
+
+
 }
 
 @media (min-width: 630px) {
@@ -120,37 +122,67 @@ body {
     }
 }
 
+.showcase {
+    position: relative;
+}
+
+.cnt-showcase {
+    min-width: 26rem;
+    max-width: 47rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding-left: 5rem;
+    padding-right: 3rem;
+    padding-top: 10rem;
+}
+
+.title-1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.56;
+    color: #E87D0E;
+}
+
+.title-2 {
+
+    font-size: 3.3rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+p {
+    font-size: 1.4rem;
+    line-height: 2;
+    font-weight: 400;
+}
+
 .btn {
-    display: inline-block;
     border-radius: 3rem;
     background-color: #DF7C14;
     color: white;
     border: none;
     cursor: pointer;
     padding: 1.4rem 1.4rem;
-
+    width: max-content;
 }
 
 .btn-style {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
-.ct-showcase {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 3rem;
-    padding-right: 3rem;
-}
 
-.title-2 {
-    font-size: 3.8rem;
-    font-weight: 600;
+img.img2 {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
 
 }
-
-
 
 
 
