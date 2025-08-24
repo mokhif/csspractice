@@ -183,10 +183,10 @@ img.img2 {
     img.img2 {
         position: absolute;
         display: block;
-        height: 54rem;
+        object-fit: cover;
         width: auto;
+        height: 546px;
         z-index: -1;
-        inset: auto 0 0 0;
     }
 
 }
@@ -203,85 +203,3 @@ img.img2 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-.img-container {
-    position: relative;
-    width: 100%;
-    max-width: 1438px;
-}
-
-.img1 {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: auto;
-}
-
-.img2 {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: auto;
-} */
