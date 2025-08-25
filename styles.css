@@ -96,7 +96,7 @@ body {
 }
 
 .showcase {
-    position: relative;
+    /*   position: relative; */
     max-height: 79rem;
 
 }
@@ -150,20 +150,17 @@ p {
     font-weight: 500;
 }
 
-.svg-img {
-    aspect-ratio: 1438/546;
+/* .svg-img {
     position: absolute;
-    max-width: 144rem;
-    height: auto;
+    min-width: 100%;
     z-index: -1;
 }
 
 .img2 {
     max-width: 100%;
     max-height: 100%;
-    object-position: bottom;
 }
-
+ */
 
 .dots-img {
     position: absolute;
@@ -186,6 +183,19 @@ img.office-img {
 
 .cnt-blindman {
     display: none;
+}
+
+.svg-img {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    top: 50rem;
+    justify-self: center;
+}
+
+.img2 {
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -229,6 +239,8 @@ img.office-img {
     .showcase {
         display: flex;
         padding-top: 2.4rem;
+        padding-right: 7rem;
+        padding-left: 7rem;
     }
 
     .cnt-showcase {
@@ -241,17 +253,18 @@ img.office-img {
         position: relative;
     }
 
+
     .svg-img {
-        aspect-ratio: 1438/546;
         position: absolute;
-        max-width: 100%;
-        height: auto;
+        width: 80%;
         z-index: -1;
+        top: 23rem;
+        justify-self: center;
     }
 
     .img2 {
-        max-width: 100%;
-        max-height: 100%;
+        width: 100%;
+        height: 100%;
     }
 
     .title-1 {
@@ -274,5 +287,4 @@ img.office-img {
         font-weight: 400;
     }
 
-    .cnt-blindman {}
 }
