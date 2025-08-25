@@ -97,11 +97,12 @@ body {
 
 .showcase {
     position: relative;
-    min-height: 57rem;
+    max-height: 79rem;
 
 }
 
 .cnt-showcase {
+    position: relative;
     min-width: 26rem;
     max-width: 47rem;
     display: flex;
@@ -149,16 +150,18 @@ p {
     font-weight: 500;
 }
 
-
-img.img2 {
+.svg-img {
+    aspect-ratio: 1438/546;
     position: absolute;
-    display: block;
-    width: 100%;
+    max-width: 144rem;
     height: auto;
-    object-fit: cover;
-    object-position: bottom;
     z-index: -1;
-    inset: auto 0 0 0;
+}
+
+.img2 {
+    max-width: 100%;
+    max-height: 100%;
+    object-position: bottom;
 }
 
 
@@ -181,7 +184,9 @@ img.office-img {
 /* DIRHA F SVG
  */
 
-
+.cnt-blindman {
+    display: none;
+}
 
 
 
@@ -194,6 +199,14 @@ img.office-img {
         display: none;
     }
 
+}
+
+@media (max-width: 512px) {
+
+    .nav-links li:nth-child(5),
+    .nav-links li:nth-child(1) {
+        display: none;
+    }
 }
 
 @media (min-width: 630px) {
@@ -209,21 +222,56 @@ img.office-img {
         display: block;
     }
 
-    img.img2 {
-        position: absolute;
+    .cnt-blindman {
         display: block;
-        object-fit: cover;
-        width: auto;
-        height: 546px;
+    }
+
+    .showcase {
+        display: flex;
+        padding-top: 2.4rem;
+    }
+
+    .cnt-showcase {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .svg-img {
+        aspect-ratio: 1438/546;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        max-width: 100%;
+        height: auto;
         z-index: -1;
     }
 
-}
-
-@media (max-width: 512px) {
-
-    .nav-links li:nth-child(5),
-    .nav-links li:nth-child(1) {
-        display: none;
+    .img2 {
+        max-width: 100%;
+        max-height: 100%;
+        object-position: bottom;
     }
+
+    .title-1 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 1.56;
+        color: #E87D0E;
+    }
+
+    .title-2 {
+
+        font-size: 4rem;
+        font-weight: 900;
+        line-height: 1.2;
+    }
+
+    p {
+        font-size: 1.7rem;
+        line-height: 2;
+        font-weight: 400;
+    }
+
+    .cnt-blindman {}
 }
