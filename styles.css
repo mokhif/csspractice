@@ -275,6 +275,16 @@ img.office-img {
         margin-right: 3rem;
     }
 
+    .showcase {
+        display: flex;
+        padding-top: 2.4rem;
+        justify-content: space-evenly;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 2rem;
+    }
+    
     .cnt-blindman {
         display: block;
         aspect-ratio: 675/590;
@@ -286,24 +296,16 @@ img.office-img {
         object-fit:cover;
     }
 
-    .showcase {
-        display: flex;
-        padding-top: 2.4rem;
-        justify-content: space-evenly;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        gap: 10rem;
-    }
 
     .service{
-        margin-top: 40rem;
+        margin-top: 23rem;
     }
     .cnt-showcase {
-        width: 50%;
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        padding-left: 0;
+        padding-right: ;
     }
 .cnt-img{
     margin-left: 25rem;
@@ -312,7 +314,9 @@ img.office-img {
     body {
         position: relative;
     }
-
+.service-para{
+    display: block;
+}
 
     .svg-img {
         position: absolute;
@@ -331,7 +335,7 @@ img.office-img {
     }
 
     .title-1 {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         font-weight: 700;
         line-height: 1.56;
         color: #E87D0E;
@@ -339,15 +343,17 @@ img.office-img {
 
     .title-2 {
 
-        font-size: 4rem;
+        font-size: 5rem;
         font-weight: 900;
-        line-height: 1.2;
+        line-height: 1.56;
     }
 
     p {
-        font-size: 1.7rem;
+        font-size: 1.6rem;
         line-height: 2;
         font-weight: 400;
     }
-
+.p-showcase{
+    width: 100%;
+    text-align: left;
 }
