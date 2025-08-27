@@ -27,7 +27,9 @@ body {
 
     background-color: #DF7C14;
 }
-
+.li:hover{
+    cursor: pointer;
+}
 .header {
     max-width: 144rem;
     height: 7rem;
@@ -283,6 +285,7 @@ align-content: center;
     transform: translateX(5px);
     transition: transform 0.3s ease;
 }
+
 @media (min-width: 513px) {
     .nav-links li:nth-child(3) {
         display: block;
@@ -327,7 +330,7 @@ align-content: center;
         display: flex;
         padding-top: 2.4rem;
         justify-content: space-evenly;
-        width: 90%;
+        max-width: 90%;
         margin-left: auto;
         margin-right: auto;
         gap: 2rem;
@@ -336,12 +339,13 @@ align-content: center;
     .cnt-blindman {
         display: block;
         aspect-ratio: 675/590;
-        width: 50%;
+        max-width: 50%;
+        min-width: 50%;
     }
 
     .blindman {
         width: 100%;
-        object-fit:cover;
+        object-fit:scale-down;
     }
 
 
@@ -356,8 +360,10 @@ align-content: center;
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        padding-left: 0;
-        padding-right: ;
+        padding-left: 2rem;
+        padding-right:2rem;
+         max-width: 50%;
+        min-width: 50%;
     }
 .cnt-img{
    margin-bottom: 15rem;
