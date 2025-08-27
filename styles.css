@@ -13,7 +13,9 @@ html {
 
 .wrapper {
     max-width: 144rem;
-    margin: 0px auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8rem;
 }
 
 body {
@@ -220,7 +222,7 @@ img.office-img {
 .cnt-dots{
     aspect-ratio: 196/154;
     position: absolute;
-    top:0; 
+    top:0;
     right: 0;
     width: 20%;
     object-fit: fill;
@@ -231,7 +233,43 @@ img.office-img {
     width: 100%;
     height: 100%;
 }
-   
+
+
+.h1-descktop{
+    display: none;
+}
+
+.service-btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6.5rem;
+}
+
+.btn-s{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border-style: none;
+background: none;
+cursor: pointer;
+min-width: 25rem;
+}
+
+.icon-style{
+background-color:rgba(220, 112, 0, 0.09);
+border-radius: 32px;
+width: 64px;
+height: 64px;
+align-content: center;
+}
+
+.p-btn{
+    font-size: 1.6rem;
+    white-space: nowrap;
+}
+
 
 
 
@@ -284,13 +322,13 @@ img.office-img {
         margin-right: auto;
         gap: 2rem;
     }
-    
+
     .cnt-blindman {
         display: block;
         aspect-ratio: 675/590;
         width: 50%;
     }
-    
+
     .blindman {
         width: 100%;
         object-fit:cover;
@@ -299,6 +337,10 @@ img.office-img {
 
     .service{
         margin-top: 23rem;
+        margin-bottom: 15rem;
+        width:80%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .cnt-showcase {
         display: flex;
@@ -308,14 +350,16 @@ img.office-img {
         padding-right: ;
     }
 .cnt-img{
-    margin-left: 25rem;
-    width: 50%;
+   margin-bottom: 15rem;
 }
     body {
         position: relative;
     }
 .service-para{
     display: block;
+    text-align: left;
+    justify-self: left;
+    width: 47%;
 }
 
     .svg-img {
@@ -356,4 +400,34 @@ img.office-img {
 .p-showcase{
     width: 100%;
     text-align: left;
+}
+
+.service-h2{
+    justify-self: center;
+    text-align: center;
+    width: 60%;
+    font-size: 2.5rem;
+    line-height: 1.8;
+    font-weight: 600;
+}
+
+.service-btns{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6.5rem;
+}
+
+/* .btn-s{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border-style: none;
+background: none;
+cursor: pointer;
+min-width: 25rem;
+}
+ */
 }
