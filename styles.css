@@ -277,13 +277,13 @@ img.office-img {
 
     .cnt-blindman {
         display: block;
+        aspect-ratio: 675/590;
         width: 50%;
     }
-
+    
     .blindman {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+        object-fit:cover;
     }
 
     .showcase {
@@ -306,7 +306,7 @@ img.office-img {
         gap: 2rem;
     }
 .cnt-img{
-    margin-left: 20rem;
+    margin-left: 25rem;
     width: 50%;
 }
     body {
@@ -317,6 +317,7 @@ img.office-img {
     .svg-img {
         position: absolute;
         aspect-ratio: 1438/547;
+        max-width: fit-content;
         object-fit: cover;
         margin-left: auto;
         margin-right:auto;
