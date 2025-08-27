@@ -271,8 +271,18 @@ align-content: center;
 }
 
 
-
-
+.btn-s:hover .icon-style{
+    background-color: #cf6b0032;
+    transition: background-color 0.3s ease;
+}
+.btn-s:hover .p-btn{
+    color: #E87D0E;
+    transition: color 0.3s ease;
+}
+.btn-s:hover .arrow img{
+    transform: translateX(5px);
+    transition: transform 0.3s ease;
+}
 @media (min-width: 513px) {
     .nav-links li:nth-child(3) {
         display: block;
