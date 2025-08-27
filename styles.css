@@ -96,7 +96,6 @@ body {
 }
 
 .showcase {
-    /*   position: relative; */
     max-height: 79rem;
     margin-bottom:8rem ;
 
@@ -156,6 +155,7 @@ p {
 
 
 .svg-img {
+    aspect-ratio: 1438/547;
     position: absolute;
     width: 100%;
     z-index: -1;
@@ -293,16 +293,22 @@ img.office-img {
         width: 90%;
         margin-left: auto;
         margin-right: auto;
-        gap: 2rem;
+        gap: 10rem;
     }
 
+    .service{
+        margin-top: 40rem;
+    }
     .cnt-showcase {
         width: 50%;
         display: flex;
         flex-direction: column;
         gap: 2rem;
     }
-
+.cnt-img{
+    margin-left: 20rem;
+    width: 50%;
+}
     body {
         position: relative;
     }
@@ -310,12 +316,10 @@ img.office-img {
 
     .svg-img {
         position: absolute;
-        aspect-ratio: 675/590;
+        aspect-ratio: 1438/547;
         object-fit: cover;
         margin-left: auto;
         margin-right:auto;
-        width: 94%;
-        height: 80%;
         z-index: -1;
         top: 23rem;
     }
