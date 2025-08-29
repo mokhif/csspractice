@@ -273,11 +273,13 @@ img.office-img {
 }
 .cards-wrapper {
   background-color: #f5f5f5;
-  height: 71rem;
+  height: 74rem;
   padding-top: 6.9rem;
 }
 .cards-sections {
+  position: relative;
   max-width: 80%;
+  height: auto;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -292,7 +294,7 @@ img.office-img {
 }
 .h3-cards {
   font-size: 1.7rem;
-  line-height: 1.8;
+  line-height: 1;
   font-weight: 500;
   text-align: left;
   margin: 0;
@@ -303,24 +305,34 @@ img.office-img {
   line-height: 1.8;
   font-weight: 400;
   text-align: left;
+  max-width: 48rem;
   margin-bottom: 2rem;
   margin: 0;
 }
+.flex-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 4rem;
+}
 .cards {
+  min-width: 378px;
+  min-height: 343px;
   display: flex;
   border-radius: 16px;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 4rem auto;
   align-items: left;
   gap: 2rem;
   background-color: white;
   padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 0rem;
   padding-left: 3rem;
 }
 .p-cards {
+  padding: 0.5rem 1rem;
   border-radius: 6px;
-  background-color: aquamarine;
+  background-color: rgba(127, 255, 212, 0.264);
+  color: rgb(106, 218, 115);
   line-height: 1.5;
   font-size: medium;
   width: fit-content;
@@ -328,6 +340,7 @@ img.office-img {
 .pcards {
   text-align: left;
   margin: 0;
+  font-size: 1.4rem;
 }
 .cards-btn {
   border-radius: 3rem;
@@ -350,6 +363,29 @@ img.office-img {
 .cards-btn:hover .RM-btn {
   color: #af6300;
   transition: color 0.3s ease;
+}
+
+.cycle-btn {
+  display: flex;
+  justify-content: right;
+  gap: 1rem;
+  margin-top: 1.6rem;
+}
+
+.cycle {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%; /* round */
+  background-color: #ffffff;
+  font-size: 1.6rem; /* size of < and > */
+  font-weight: lighter;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.cycle:hover {
+  background-color: #d7d7d7; /* hover effect */
+  transform: scale(1.1); /* slight zoom */
 }
 
 @media (min-width: 513px) {
@@ -495,15 +531,33 @@ img.office-img {
     gap: 2.5rem;
   }
 
-  /* .btn-s{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-border-style: none;
-background: none;
-cursor: pointer;
-min-width: 25rem;
-}
- */
+  .flex-scroll {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    overflow-x: auto;
+  }
+  .cards {
+    min-width: 378px;
+    min-height: 348px;
+    display: flex;
+    border-radius: 16px;
+    flex-direction: column;
+    margin: 4rem auto;
+    align-items: left;
+    gap: 3rem;
+    background-color: white;
+    padding-top: 3rem;
+    padding-bottom: 0rem;
+    padding-left: 3rem;
+  }
+  .pcards {
+    font-size: 1.4rem;
+  }
+  .cycle-btn {
+    position: absolute;
+    right: 0;
+    top: -1.6rem;
+    margin-right: 3rem;
+  }
 }
