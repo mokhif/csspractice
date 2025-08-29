@@ -315,7 +315,8 @@ img.office-img {
   gap: 4rem;
 }
 .cards {
-  min-width: 378px;
+  min-width: 260px;
+  max-width: 360px;
   min-height: 343px;
   display: flex;
   border-radius: 16px;
