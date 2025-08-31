@@ -16,7 +16,12 @@ html {
   margin-right: auto;
   margin-bottom: 8rem;
 }
-
+.news {
+  max-width: 144rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8rem;
+}
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -129,7 +134,7 @@ p {
   font-size: 1.2rem;
   line-height: 1.8;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
   justify-self: center;
   width: 85%;
 }
@@ -245,7 +250,9 @@ img.office-img {
   cursor: pointer;
   min-width: 25rem;
 }
-
+.h-r2 {
+  display: none;
+}
 .icon-style {
   background-color: rgba(220, 112, 0, 0.09);
   border-radius: 32px;
@@ -429,7 +436,6 @@ img.office-img {
   font-weight: 600;
   text-align: center;
   margin: 0;
-  margin-bottom: 4rem;
 }
 .p-headnews {
   font-size: 2.5rem;
@@ -456,7 +462,7 @@ img.office-img {
   margin: 20px auto;
 }
 .aspect-img {
-  width: clamp(325px, 70vw, 588px); /* min 325, scales with viewport, max 588 */
+  width: clamp(325px, 50vw, 588px); /* min 325, scales with viewport, max 588 */
   height: 295px; /* fixed height */
   overflow: hidden;
   border-radius: 12px;
@@ -493,14 +499,17 @@ img.office-img {
   text-align: left;
   margin-right: auto;
 }
+.ctn-small-flex {
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+}
 .small-flex {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
   gap: 2rem;
   max-width: 90%;
-  margin: 5rem auto;
-  margin-bottom: 5rem;
+  margin: 2rem auto;
 }
 .small-flex-text {
   padding: 0 0;
@@ -515,8 +524,8 @@ img.office-img {
   display: flex;
   flex-direction: column;
   width: 94%;
-  margin: 0 auto;
-  gap: 2.4rem;
+  margin: 4rem auto;
+  gap: 2.5rem;
 }
 .button-div {
   margin-right: auto;
@@ -568,10 +577,50 @@ img.office-img {
 }
 
 @media (min-width: 720px) {
+  .descktop-container {
+    display: flex;
+    justify-content: center;
+    mad-width: 127.7rem;
+    margin: 0 auto;
+  }
+  .h2-news {
+    font-size: 3rem;
+    margin: 0 auto;
+  }
+  .h3-news {
+    font-size: 2.3rem;
+    margin: 0 0;
+  }
+  .cnt-news-flex {
+    flex: 1;
+  }
+  .bigctn-small-flex {
+    flex: 1;
+  }
+  .small-flex-text {
+    align-self: center;
+  }
+  .small-flex-text button,
+  .small-flex-text span {
+    margin-bottom: 1rem;
+  }
+  .small-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 3rem;
+    margin: 2rem auto;
+  }
   .nav-links li:nth-child(4) {
     display: block;
   }
-
+  .kids {
+    aspect-ratio: 195/183;
+    width: 195px;
+    height: 183px;
+    object-fit: cover;
+    object-position: center;
+  }
   .nav-links {
     display: flex;
     gap: 7.1rem;
@@ -579,7 +628,9 @@ img.office-img {
     align-items: center;
     margin-right: 3rem;
   }
-
+  .h-r1 {
+    display: none;
+  }
   .showcase {
     display: flex;
     padding-top: 2.4rem;
