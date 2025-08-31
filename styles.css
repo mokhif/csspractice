@@ -423,6 +423,127 @@ img.office-img {
   display: none;
 }
 
+.section-title {
+  font-size: 2.5rem;
+  line-height: 1.8;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 4rem;
+}
+.p-headnews {
+  font-size: 2.5rem;
+  line-height: 1.8;
+  font-weight: 600;
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+.p-2nd {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  font-weight: 200;
+  text-align: center;
+  max-width: 70%;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  max-width: 87%;
+  margin: 20px auto;
+}
+.aspect-img {
+  width: clamp(325px, 70vw, 588px); /* min 325, scales with viewport, max 588 */
+  height: 295px; /* fixed height */
+  overflow: hidden;
+  border-radius: 12px;
+}
+.aspect-img img {
+  width: 100%; /* fill container width */
+  height: 100%; /* fill container height */
+  object-fit: cover; /* crop instead of squish */
+  object-position: center; /* center the crop */
+  display: block; /* remove inline-gap/whitespace */
+}
+.search button {
+  padding: 10px 16px;
+  border: 0px solid #ccc;
+  border-right: none;
+  background: #f1f1f1;
+  color: white;
+  border-radius: 10px 0 0 10px;
+  cursor: pointer;
+}
+.search input {
+  flex: 1;
+  padding: 10px;
+  border: 0px solid #ccc;
+  background: #f1f1f1;
+  border-left: none;
+  border-radius: 0 10px 10px 0;
+  outline: none;
+}
+.h2-news {
+  font-size: 2rem;
+  line-height: 1.3;
+  font-weight: 600;
+  text-align: left;
+  margin-right: auto;
+}
+.small-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 90%;
+  margin: 5rem auto;
+  margin-bottom: 5rem;
+}
+.small-flex-text {
+  padding: 0 0;
+  margin: 0 0;
+}
+.small-flex-img {
+  aspect-ratio: 112/105;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.news-flex {
+  display: flex;
+  flex-direction: column;
+  width: 94%;
+  margin: 0 auto;
+  gap: 2.4rem;
+}
+.button-div {
+  margin-right: auto;
+}
+.small-flex button {
+  max-width: 10.6rem;
+  max-height: 2.7rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  margin-right: 1rem;
+}
+.news button {
+  width: clamp(133px, 10vw, 164px); /* min 100px, fluid up to 200px */
+  height: 48px;
+  padding: 10px 16px; /* inside spacing */
+  background: #0077ff;
+  color: white;
+  border: none;
+  font-size: 1.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.news span {
+  font-size: 1.6rem;
+}
 @media (min-width: 513px) {
   .nav-links li:nth-child(3) {
     display: block;
@@ -601,7 +722,7 @@ img.office-img {
   .images-flex {
     display: flex;
     flex-direction: row;
-    max-width: 100%;
+    max-width: 144rem;
     justify-content: center;
     align-items: baseline;
     flex-wrap: wrap;
